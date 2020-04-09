@@ -8,6 +8,7 @@ Page({
     inTheaters: {},
     comingSoon: {},
     top250: {},
+    testResult:"",
     searchResult: {},
     containerShow: true,
     searchPanelShow: false,
@@ -71,7 +72,8 @@ Page({
       this.setData({
         containerShow: true,
         searchPanelShow: false,
-        searchResult:{}
+        searchResult:{},
+        testResult:""
       }
     )
   },
