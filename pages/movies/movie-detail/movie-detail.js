@@ -9,7 +9,7 @@ Page({
     var movieId = options.id;
     var url = app.globalData.doubanBase +
       "/v2/movie/subject/" + movieId;
-    var movie = new Movie(url);
+    var movieClass = new Movie(url);
     // var movieData = movie.getMovieData();
     // var that = this;
     // movie.getMovieData(function (movie) {
@@ -18,9 +18,9 @@ Page({
     //   })
     // })
     //C#、Java、Python lambda
-    movie.getMovieData((movie) => {
+    movieClass.getMovieData((param) => {
       this.setData({
-        movie: movie
+        movie: param
       })
     })
   },
